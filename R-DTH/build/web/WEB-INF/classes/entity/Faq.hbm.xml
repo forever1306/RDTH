@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Faq" table="FAQ" schema="dbo" catalog="RDTH">
+        <id name="faqId" type="int">
+            <column name="faqID" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="faqQestion" type="string">
+            <column name="faqQestion" />
+        </property>
+        <property name="faqAnswer" type="string">
+            <column name="faqAnswer" />
+        </property>
+        <property name="status" type="java.lang.Byte">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>

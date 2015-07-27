@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.OderDetail" table="OderDetail" schema="dbo" catalog="RDTH" optimistic-lock="version">
+        <composite-id name="id" class="entity.OderDetailId">
+            <key-property name="oderId" type="int">
+                <column name="oderID" />
+            </key-property>
+            <key-property name="packageId" type="int">
+                <column name="packageID" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="order" class="entity.Order" update="false" insert="false" fetch="select" lazy="false">
+            <column name="oderID" not-null="true" />
+        </many-to-one>
+        <many-to-one name="packages" class="entity.Packages" update="false" insert="false" fetch="select" lazy="false">
+            <column name="packageID" not-null="true" />
+        </many-to-one>
+        <property name="price" type="double">
+            <column name="price" precision="53" scale="0" not-null="true" />
+        </property>
+        <property name="quantity" type="int">
+            <column name="quantity" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

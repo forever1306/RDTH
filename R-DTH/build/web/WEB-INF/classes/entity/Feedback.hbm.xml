@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Feedback" table="Feedback" schema="dbo" catalog="RDTH">
+        <id name="feedId" type="int">
+            <column name="feedID" />
+            <generator class="identity"></generator>
+        </id>
+        <many-to-one name="customer" class="entity.Customer" fetch="select" lazy="false">
+            <column name="customerID" length="20" />
+        </many-to-one>
+        <property name="feedTitle" type="string">
+            <column name="feedTitle" />
+        </property>
+        <property name="feedContent" type="string">
+            <column name="feedContent" />
+        </property>
+        <property name="feedDate" type="timestamp">
+            <column name="feedDate" length="23" />
+        </property>
+        <property name="feedReply" type="string">
+            <column name="feedReply" />
+        </property>
+        <property name="status" type="java.lang.Byte">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>

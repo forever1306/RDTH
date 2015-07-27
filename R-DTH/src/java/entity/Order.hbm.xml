@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Order" table="[Order]" schema="dbo" catalog="RDTH">
+        <id name="oderId" type="int">
+            <column name="oderID" />
+            <generator class="identity"></generator>
+        </id>
+        <many-to-one name="customer" class="entity.Customer" fetch="select">
+            <column name="customerID" length="20" />
+        </many-to-one>
+        <property name="orderPaymentDate" type="timestamp">
+            <column name="orderPaymentDate" length="23" />
+        </property>
+        <property name="orderExpiredDate" type="timestamp">
+            <column name="orderExpiredDate" length="23" />
+        </property>
+        <property name="status" type="java.lang.Byte">
+            <column name="status" />
+        </property>
+        <set name="oderDetails" table="OderDetail" inverse="true" lazy="false" fetch="select" cascade="save-update">
+            <key>
+                <column name="oderID" not-null="true" />
+            </key>
+            <one-to-many class="entity.OderDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

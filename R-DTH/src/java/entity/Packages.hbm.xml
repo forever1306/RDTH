@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Packages" table="Packages" schema="dbo" catalog="RDTH">
+        <id name="packageId" type="int">
+            <column name="packageID" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="packageName" type="string">
+            <column name="packageName" />
+        </property>
+        <property name="packageImage" type="string">
+            <column name="packageImage" />
+        </property>
+        <property name="packageContent" type="string">
+            <column name="packageContent" />
+        </property>
+        <property name="packageMonth" type="int">
+            <column name="packageMonth" />
+        </property>
+        <property name="status" type="java.lang.Byte">
+            <column name="status" />
+        </property>
+        <set name="chanels" table="PackageDetail" inverse="false" lazy="false" fetch="select">
+            <key>
+                <column name="packageID" not-null="true" />
+            </key>
+            <many-to-many entity-name="entity.Chanel">
+                <column name="chanelID" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="oderDetails" table="OderDetail" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="packageID" not-null="true" />
+            </key>
+            <one-to-many class="entity.OderDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

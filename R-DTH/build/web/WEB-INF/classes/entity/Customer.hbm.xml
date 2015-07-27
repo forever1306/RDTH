@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Customer" table="Customer" schema="dbo" catalog="RDTH">
+        <id name="customerId" type="string">
+            <column name="customerID" length="20" />
+            <generator class="uuid"></generator>
+        </id>
+        <property name="cusName" type="string">
+            <column name="cusName" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="endDate" type="timestamp">
+            <column name="endDate" length="23" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" />
+        </property>
+        <property name="bankCardNumber" type="string">
+            <column name="bankCardNumber" length="50" />
+        </property>
+        <property name="status" type="java.lang.Byte" not-null="true">
+            <column name="status" />
+        </property>
+        <set name="orders" table="[Order]" inverse="false" lazy="false" fetch="select">
+            <key>
+                <column name="customerID" length="20" />
+            </key>
+            <one-to-many class="entity.Order" />
+        </set>
+        <set name="feedbacks" table="Feedback" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="customerID" length="20" />
+            </key>
+            <one-to-many class="entity.Feedback" />
+        </set>
+        <set name="requirements" table="Requirement" inverse="true" lazy="false" fetch="select" cascade="save-update">
+            <key>
+                <column name="customerID" length="20" not-null="true" />
+            </key>
+            <one-to-many class="entity.Requirement" />
+        </set>
+    </class>
+</hibernate-mapping>

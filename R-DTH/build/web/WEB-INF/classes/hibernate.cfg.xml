@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=RDTH</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">admin1</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="entity/Feedback.hbm.xml"/>
+    <mapping resource="entity/Admin.hbm.xml"/>
+    <mapping resource="entity/OderDetail.hbm.xml"/>
+    <mapping resource="entity/Product.hbm.xml"/>
+    <mapping resource="entity/Requirement.hbm.xml"/>
+    <mapping resource="entity/Chanel.hbm.xml"/>
+    <mapping resource="entity/Distributor.hbm.xml"/>
+    <mapping resource="entity/Faq.hbm.xml"/>
+    <mapping resource="entity/Customer.hbm.xml"/>
+    <mapping resource="entity/Packages.hbm.xml"/>
+    <mapping resource="entity/Order.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

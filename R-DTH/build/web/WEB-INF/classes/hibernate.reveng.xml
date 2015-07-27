@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="RDTH" match-schema="dbo"/>
+  <table-filter match-name="Admin"/>
+  <table-filter match-name="PackageDetail"/>
+  <table-filter match-name="FAQ"/>
+  <table-filter match-name="Product"/>
+  <table-filter match-name="Order"/>
+  <table-filter match-name="Distributor"/>
+  <table-filter match-name="OderDetail"/>
+  <table-filter match-name="Requirement"/>
+  <table-filter match-name="Packages"/>
+  <table-filter match-name="Customer"/>
+  <table-filter match-name="Chanel"/>
+  <table-filter match-name="Feedback"/>
+</hibernate-reverse-engineering>

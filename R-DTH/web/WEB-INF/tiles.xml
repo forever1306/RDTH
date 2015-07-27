@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    
+    <definition name="login" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition name="loginRedirect" template="/WEB-INF/jsp/loginRedirect.jsp"></definition>
+    <definition name="distributorLogin" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/distributor/login.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition name="adminLogin" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/login.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    
+    <definition  name="index" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <!--Admin Template-->
+    <definition  name="admin" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/admin.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <!--Customer Manager-->
+    <definition  name="customerManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/customerManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition  name="processCustomer" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    <definition name="editCustomer" template="/WEB-INF/jsp/load/editCustomer.jsp">
+    </definition>
+    <!--Customer Manager End-->
+    
+    <definition  name="chanelManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/chanelManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editChanel" template="/WEB-INF/jsp/load/editChanel.jsp">
+    </definition>
+    <definition  name="processChanel" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <definition  name="packageManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/packageManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editPackage" template="/WEB-INF/jsp/load/editPackage.jsp">
+    </definition>
+    <definition  name="processPackage" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <definition  name="distributorManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/distributorManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editDistributor" template="/WEB-INF/jsp/load/editDistributor.jsp">
+    </definition>
+    <definition  name="processDistributor" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <definition  name="FAQManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/FAQManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editFAQ" template="/WEB-INF/jsp/load/editFaq.jsp">
+    </definition>
+    <definition  name="processFAQ" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <definition  name="orderManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/orderManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editOrder" template="/WEB-INF/jsp/load/editOrder.jsp">
+    </definition>
+    <definition  name="processOrder" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <definition  name="feedbackManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/feedbackManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuAdmin.jsp" />
+    </definition>
+    <definition name="editFeedback" template="/WEB-INF/jsp/load/editFeedback.jsp">
+    </definition>
+    <definition  name="processFeedback" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    
+    <!-- END Admin Template-->
+    
+    <!--Start Distributor Template-->
+    <definition  name="productManager" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/distributor/productManager.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuDistributor.jsp" />
+    </definition>
+    <definition name="editProduct" template="/WEB-INF/jsp/load/editProduct.jsp">
+    </definition>
+    <definition  name="processProduct" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    <definition  name="orderProduct" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/distributor/orderProduct.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuDistributor.jsp" />
+    </definition>
+     <definition name="editOrderProduct" template="/WEB-INF/jsp/load/editOrderProduct.jsp">
+    </definition>
+     <definition name="processOrderProduct" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    <!--End Distributor Template-->
+    
+    <!--Start Customer Template-->
+    <definition  name="viewPackage" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/viewPackage.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="viewChanel" template="/WEB-INF/jsp/load/viewChanel.jsp">
+    </definition>
+    <definition  name="pickPackage" template="/WEB-INF/jsp/load/pickPackage.jsp">
+    </definition>
+    <definition  name="showProduct" template="/WEB-INF/jsp/load/showProduct.jsp">
+    </definition>
+    <definition  name="addToOrder" template="/WEB-INF/jsp/load/showMessage.jsp">
+    </definition>
+    <definition  name="createOrder" template="/WEB-INF/jsp/load/showMessage.jsp">
+    </definition>
+    <definition  name="register" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+     <definition  name="processRegister" template="/WEB-INF/jsp/load/showMessage.jsp">
+    </definition>
+    <definition  name="FAQViews" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/FAQView.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="feedback" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/feedback.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="addFeedback" template="/WEB-INF/jsp/load/addFeedback.jsp">
+    </definition>
+    <definition  name="processAddFeedback" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    <definition  name="changepassword" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/changePassword.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="changepassProcess" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+    <!--End Customer Template-->
+     <definition  name="upload" template="/WEB-INF/jsp/load/showMessage.jsp">
+    </definition>
+    <definition  name="aboutus" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/aboutus.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="packagesCustomer" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/packagesCustomer.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="deletePackage" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+     <definition  name="payment" template="/WEB-INF/jsp/includes/body.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/payment.jsp" />
+        <put-attribute name="menuLeft" value="/WEB-INF/jsp/includes/menuCustomer.jsp" />
+    </definition>
+    <definition  name="processPayment" template="/WEB-INF/jsp/includes/statusManager.jsp">
+    </definition>
+</tiles-definitions>

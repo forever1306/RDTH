@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Distributor" table="Distributor" schema="dbo" catalog="RDTH">
+        <id name="distributorId" type="int">
+            <column name="distributorID" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="disName" type="string">
+            <column name="disName" />
+        </property>
+        <property name="disAddress" type="string">
+            <column name="disAddress" />
+        </property>
+        <property name="disEmail" type="string">
+            <column name="disEmail" length="50" />
+        </property>
+        <property name="disPhone" type="string">
+            <column name="disPhone" length="20" />
+        </property>
+        <property name="status" type="java.lang.Byte">
+            <column name="status" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" />
+        </property>
+        <set name="products" table="Product" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="distributorID" />
+            </key>
+            <one-to-many class="entity.Product" />
+        </set>
+    </class>
+</hibernate-mapping>

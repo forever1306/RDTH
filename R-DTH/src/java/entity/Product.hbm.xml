@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2015 8:33:59 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Product" table="Product" schema="dbo" catalog="RDTH">
+        <id name="productId" type="int">
+            <column name="productID" />
+            <generator class="identity"></generator>
+        </id>
+        <many-to-one name="distributor" class="entity.Distributor" fetch="select">
+            <column name="distributorID" />
+        </many-to-one>
+        <property name="productName" type="string">
+            <column name="productName" />
+        </property>
+        <property name="productPrice" type="java.lang.Double">
+            <column name="productPrice" precision="53" scale="0" />
+        </property>
+        <property name="type" type="byte">
+            <column name="type" />
+        </property>
+        <set name="requirements" table="Requirement" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="productID" not-null="true" />
+            </key>
+            <one-to-many class="entity.Requirement" />
+        </set>
+    </class>
+</hibernate-mapping>

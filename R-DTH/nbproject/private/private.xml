@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/jsp/payment.jsp</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/tiles.xml</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/jsp/login.jsp</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/src/java/controller/PaymentController.java</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/src/java/controller/PackageManagerController.java</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/jsp/FAQView.jsp</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/css/style.css</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/src/java/controller/LoginController.java</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/jsp/includes/body.jsp</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/src/java/controller/ChanelManagerController.java</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/jsp/feedback.jsp</file>
+            <file>file:/C:/Users/Minh-IT/Google%20Drive/Study/Java/JEE/Project%20Sem%20IV/R-DTH/web/WEB-INF/spring-config-security.xml</file>
+        </group>
     </open-files>
 </project-private>

@@ -36,7 +36,7 @@
         <label class="mdl-textfield__label" for="sp">Chanel Name</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <form:input path="chanelPrice"  cssClass="mdl-textfield__input" id="sp" type="number" required="true" maxlength="8"/>
+        <form:input path="chanelPrice"  cssClass="mdl-textfield__input" id="sp" type="number" required="true"/>
         <label class="mdl-textfield__label" for="sp">Chanel Price</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">

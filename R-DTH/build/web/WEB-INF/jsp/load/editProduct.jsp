@@ -15,11 +15,11 @@
         <label class="mdl-textfield__label" for="sp">Product Name</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <form:input path="productPrice" cssClass="mdl-textfield__input" type="number" required="true"/>
+        <form:input path="productPrice" cssClass="mdl-textfield__input" required="true"/>
         <label class="mdl-textfield__label" for="sp">Product Price</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <form:input path="type" cssClass="mdl-textfield__input"  required="true" type="number" maxlength="2"/>
+        <form:input path="type" cssClass="mdl-textfield__input"  required="true" type="digits"/>
         <label class="mdl-textfield__label" for="sp">Product Type</label>
     </div>
     <form:hidden path="distributor.distributorId" />

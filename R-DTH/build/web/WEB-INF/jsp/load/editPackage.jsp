@@ -42,7 +42,7 @@
         <label class="mdl-textfield__label">Package Name</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <form:input path="packageMonth" cssClass="mdl-textfield__input" required="true" type="number" maxlength="2"/>
+        <form:input path="packageMonth" cssClass="mdl-textfield__input" required="true"/>
         <label class="mdl-textfield__label">Month</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
